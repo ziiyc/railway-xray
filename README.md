@@ -1,5 +1,7 @@
 # 使用Railway部署Xray高性能代理服务，通过ws传输的 (vmess、vless、trojan shadowsocks、socks)等协议
 
+# Railway已封禁本项目，请Fork到自己的GitHub后部署
+
 > 提醒： 滥用可能导致账户被BAN！！！ 
 
 ## 概述
@@ -10,7 +12,7 @@ vless 性能更加优秀，占用资源更少。
 * 使用[xray](https://github.com/XTLS/Xray-core)+caddy同时部署通过ws传输的vmess vless trojan shadowsocks socks等协议，并默认已配置好伪装网站。
 * 支持tor网络，且可通过自定义网络配置文件启动xray和caddy来按需配置各种功能  
 * 支持存储自定义文件,目录及账号密码均为UUID,客户端务必使用TLS连接  
-
+  **Railway 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
 
 
 ### 服务端
