@@ -22,7 +22,7 @@ fork 之后 ，在railway的dashboard，选择 new project
 
 ### 客户端
 * **务必替换所有的`xxx.railway.app`为railway分配的项目域名**  
-* **务必替换所有的`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`为部署时设置的UUID,建议更改,不要每个人都一样**  
+* **务必替换所有的`ffffffff-ffff-ffff-ffff-ffffffffffff`为部署时设置的UUID,建议更改,不要每个人都一样**  
 
 **XRay 将在部署时会自动实配安装`最新版本`。**
 
@@ -34,15 +34,15 @@ fork 之后 ，在railway的dashboard，选择 new project
 ```bash
 * 客户端下载：https://github.com/2dust/v2rayN/releases
 * 代理协议：vless 或 vmess
-* 地址：xxx.herokuapp.com
+* 地址：xxx.railway.app
 * 端口：443
-* 默认UUID：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* 默认UUID：ffffffff-ffff-ffff-ffff-ffffffffffff
 * vmess额外id：0
 * 加密：none
 * 传输协议：ws
 * 伪装类型：none
 * 伪装域名：xxx.workers.dev(CF Workers反代地址)
-* 路径：/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vless // 默认vless使用(/自定义UUID码-vless)，vmess使用(/自定义UUID码-vmess)
+* 路径：/ffffffff-ffff-ffff-ffff-ffffffffffff-vless // 默认vless使用(/自定义UUID码-vless)，vmess使用(/自定义UUID码-vmess)
 * 底层传输安全：tls
 * 跳过证书验证：false
 ```
@@ -57,15 +57,15 @@ fork 之后 ，在railway的dashboard，选择 new project
     "run_type": "client",
     "local_addr": "127.0.0.1",
     "local_port": 1080,
-    "remote_addr": "xxx.herokuapp.com",
+    "remote_addr": "xxx.railway.app",
     "remote_port": 443,
     "password": [
-        "24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
+        "ffffffff-ffff-ffff-ffff-ffffffffffff"
     ],
     "websocket": {
         "enabled": true,
-        "path": "/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-trojan",
-        "host": "xxx.herokuapp.com"
+        "path": "/ffffffff-ffff-ffff-ffff-ffffffffffff-trojan",
+        "host": "xxx.railway.app"
     }
 }
 ```
@@ -76,12 +76,12 @@ fork 之后 ，在railway的dashboard，选择 new project
 
 ```bash
 * 客户端下载：https://github.com/shadowsocks/shadowsocks-windows/releases/
-* 服务器地址: xxx.herokuapp.com
+* 服务器地址: xxx.railway.app
 * 端口: 443
-* 密码：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* 密码：ffffffff-ffff-ffff-ffff-ffffffffffff
 * 加密：chacha20-ietf-poly1305
 * 插件程序：xray-plugin_windows_amd64.exe  //需将插件https://github.com/shadowsocks/xray-plugin/releases下载解压后放至shadowsocks同目录
-* 插件选项: tls;host=xxx.herokuapp.com;path=/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss
+* 插件选项: tls;host=xxx.railway.app;path=/ffffffff-ffff-ffff-ffff-ffffffffffff-ss
 ```
 </details>
 
@@ -89,8 +89,8 @@ fork 之后 ，在railway的dashboard，选择 new project
 <summary>可以使用Cloudflare的Workers来中转流量，（支持VLESS\VMESS\Trojan-Go的WS模式）配置为：</summary>
 
 ```js
-const SingleDay = 'xxx.herokuapp.com'
-const DoubleDay = 'xxx.herokuapp.com'
+const SingleDay = 'xxx.railway.app'
+const DoubleDay = 'xxx.railway.app'
 addEventListener(
     "fetch",event => {
     
@@ -114,10 +114,8 @@ addEventListener(
 
 ## OpenWrt优选IP脚本自动更新：
 
-* [CloudflareST](https://github.com/Lbingyi/CloudflareST) `OpenWrt推荐-速度较快`
-* [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate) `OpenWrt推荐`
-
-> [更多来自热心网友PR的使用教程](/tutorial)
+* [CloudflareST](https://github.com/Lbingyi/CloudflareST)
+* [cf-autoupdate](https://github.com/Lbingyi/cf-autoupdate)
 
 ## 关于CF筛选IP
 
