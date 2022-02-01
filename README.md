@@ -19,11 +19,11 @@ vless 性能更加优秀，占用资源更少。
 
 fork 之后 ，在railway的dashboard，选择 new project
 
-[![CHIH8A.png](https://tidio-files.s3.amazonaws.com/qvuhlel79zmld8fnbil5xosliohltxrk/conversation/unknown/d5a9f90e-9a91-4b41-994a-4ef0bd078751.png)
+![CHIH8A.png](https://tidio-files.s3.amazonaws.com/qvuhlel79zmld8fnbil5xosliohltxrk/conversation/unknown/d5a9f90e-9a91-4b41-994a-4ef0bd078751.png)
 
 然后在github中选中本仓库
 
-[![5oSpg.png](https://tidio-files.s3.amazonaws.com/qvuhlel79zmld8fnbil5xosliohltxrk/conversation/unknown/d5a9f90e-9a91-4b41-994a-4ef0bd078751.png)
+![5oSpg.png](https://tidio-files.s3.amazonaws.com/qvuhlel79zmld8fnbil5xosliohltxrk/conversation/unknown/d5a9f90e-9a91-4b41-994a-4ef0bd078751.png)
 
 ### 客户端
 * **务必替换所有的`xxx.railway.app`为railway分配的项目域名**  
