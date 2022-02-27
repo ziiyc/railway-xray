@@ -14,6 +14,9 @@ vless 性能更加优秀，占用资源更少。
 * 支持存储自定义文件,目录及账号密码均为UUID,客户端务必使用TLS连接  
   **Railway 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
 
+## 镜像
+
+本镜像不会因为大量占用资源而被封号。注册好Heroku账号并登录后,点击下面按钮便可部署.
 
 ### 服务端
 
@@ -31,7 +34,7 @@ fork 之后 ，在railway的dashboard，选择 new project
 
 **XRay 将在部署时会自动实配安装`最新版本`。**
 
-
+**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 XRay vless Websocket + TLS。**
 
 <details>
 <summary>V2rayN(Xray、V2ray)</summary>
@@ -127,4 +130,11 @@ addEventListener(
 * 请参考 [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest) `推荐`
 * 请参考 [better-cloudflare-ip](https://github.com/badafans/better-cloudflare-ip)
 
+### 特别感谢 ：
+
+* [Lbingyi](https://github.com/Lbingyi)
+* [mixool](https://github.com/mixool)
+* [bclswl0827](https://github.com/bclswl0827/v2ray-heroku)
+* [yxhit](https://github.com/yxhit)
+* [badafans](https://github.com/badafans/better-cloudflare-ip/tree/20201208)
 
